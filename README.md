@@ -1,5 +1,7 @@
 # Hidden in Plain Tokens: Simply Robust, Gradient-Free Watermark for Synthetic Audio
 
+## NOTE: An issue was flagged in this paper. I am fixing it and will update the paper and code soon! 
+
 This repository contains the code for the ICML 2026 paper above. The method is a training-free watermark for autoregressive audio generators. It works at the token level, but detection is performed on a clustered vocabulary built from retokenization confusion, which makes the watermark substantially less sensitive to codec inconsistencies after decode-encode round trips and downstream audio modifications.
 
 The artifact covers three settings used in the paper:
